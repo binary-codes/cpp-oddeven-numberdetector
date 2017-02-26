@@ -1,38 +1,35 @@
-// NIM/Nama : 16416303
-// Nama file: PB01-16416303-170212-01.cpp
-// Tanggal  : 12 Febuari 2017
-// Deskripsi: program deteksi jenis bilangan
 #include <iostream>
 using namespace std;
 
 int main(){
-    //data
+    //datainput
     int input;
-    cout << "masukkan nilai N: ";
+    cout << "input number: ";
     cin >> input;
-    //cek apakah bilangan berada di dalam batas
+
     if(input > 100 || input < -100){
-        cout << "bilangan berada diluar batas";
+        cout << "the number is outside of allowed range";
     }else{
 
-    //cek apakah bilangan positif
+    //check if it's positive
     if(input > 0){
         if(input % 2 == 0){
-            cout << "N adalah bilangan genap positif";
+            cout << "it's an even positive number";
         }else{
-            cout << "N adalah bilangan ganjil positif";
+            cout << "it's an odd positive number";
         };
 
-    //cek apakah bilangan negatif
+    //check if it's negative
     }else if(input < 0){
         if(input % 2 == 0){
-            cout << "N adalah bilangan genap negatif";
+            cout << "it's an even negative number";
         }else{
-            cout << "N adalah bilangan ganjil negatif";
+            cout << "it's an odd negative number";
         };
-    //jika tidak positif maupun negatif maka netral
+        
+    //if neither, then it's neutral
     }else{
-        cout << "N adalah bilangan netral";
+        cout << "it's a neutral";
     };
     };
     return 0;
